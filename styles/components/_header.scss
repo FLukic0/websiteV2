@@ -1,0 +1,113 @@
+header.desktop {
+  z-index: 9998;
+  position: fixed;
+  width: 100%;
+  nav {
+    padding-top: 0.5rem;
+    ul {
+      @extend .box-shadow-lg;
+      @extend .d-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      width: fit-content;
+      margin: 0 auto;
+      background-color: var(--header-bg-color);
+      border-radius: 25px;
+
+      li {
+        a {
+          transition: color $default_transition_time ease;
+          -moz-transition: color $default_transition_time ease;
+          -o-transition: color $default_transition_time ease;
+          -webkit-transition: color $default_transition_time ease;
+          display: block;
+          padding: 0.5rem;
+          color: inherit;
+          border-radius: 25px;
+          color: var(--header-link-unhover-color);
+
+          &:hover {
+            color: var(--txt-color);
+          }
+
+          &.active {
+            color: var(--txt-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+header.mobile {
+  z-index: 9998;
+  position: fixed;
+  width: 100%;
+
+  nav.closed {
+    .hamburger-button {
+      @extend .box-shadow-lg;
+    }
+  }
+
+  .hamburger-button {
+    @extend .no-user-select;
+    @extend .d-flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--hamburger-button-bg);
+
+    path {
+      stroke: var(--hamburger-button-stroke);
+    }
+  }
+
+  .background {
+    @extend .box-shadow-lg;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 180px;
+    background: var(--hamburger-button-bg);
+    height: 100%;
+  }
+
+  ul {
+    padding: 25px;
+    position: absolute;
+    width: 180px;
+    top: 50px;
+    li {
+      margin-bottom: 0.5rem;
+      a {
+        transition: color $default_transition_time ease;
+        display: block;
+        width: 100%;
+        padding: 0.5rem;
+        color: inherit;
+        border-radius: 25px;
+        color: var(--header-link-unhover-color);
+
+        &:hover {
+          color: var(--txt-color);
+        }
+
+        &.active {
+          color: var(--txt-color);
+        }
+      }
+    }
+  }
+}

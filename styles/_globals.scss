@@ -1,0 +1,117 @@
+@import "./inits/reset";
+@import "./inits/variables";
+@import "./inits/fonts";
+
+html {
+  font-size: $default_font_size;
+
+  @include md-breakpoint {
+    font-size: $default_font_size - 4px;
+  }
+
+  @include lg-breakpoint {
+    font-size: $default_font_size - 2px;
+  }
+
+  --bg-color: rgb(249 250 251);
+  --txt-color: rgb(3 7 18);
+  --header-bg-color: rgb(249 250 251);
+  --header-link-unhover-color: rgb(107 114 128);
+  --alternate-button-color: rgb(17, 24, 39);
+  --alternate-button-txt-color: var(--bg-color);
+  --introduction-bg-gradient: linear-gradient(
+    to bottom,
+    #cfeefcc3,
+    #cffcfa97,
+    #bbe6f265,
+    var(--bg-color)
+  );
+
+  --skills-bg-color: var(--bg-color);
+  --education-bg-color: var(--bg-color);
+  --face-image-border: var(--bg-color);
+  --project-bg-color: #f3f4f6;
+  --experience-content-bg: #f3f4f6;
+  --box-shadow-large: 0 3px 6px rgba(0, 0, 0, 0.08),
+    0 3px 6px rgba(0, 0, 0, 0.15);
+  --box-shadow-medium: 0 3px 4px rgba(0, 0, 0, 0.08),
+    0 3px 4px rgba(0, 0, 0, 0.15);
+  --contact-socials-bg: var(--bg-color);
+  --contact-input-bg: var(--bg-color);
+  --contact-send-color: var(--bg-color);
+  --hamburger-button-bg: var(--bg-color);
+  --hamburger-button-stroke: hsl(0, 0%, 18%);
+  --toggle-theme-bg: var(--bg-color);
+}
+
+* {
+  z-index: 10;
+}
+
+html.dark {
+  --bg-color: #212529;
+  --lighter-bg-color: #343a40;
+  --txt-color: rgb(249 250 251);
+  --header-bg-color: var(--lighter-bg-color);
+  --header-link-unhover-color: rgb(205, 205, 205);
+  --alternate-button-color: #12aa38;
+  --alternate-button-txt-color: var(--txt-color);
+  --experience-content-bg: var(--lighter-bg-color);
+  --box-shadow-large: 0 3px 6px rgba(94, 90, 90, 0.055),
+    0 3px 6px rgba(94, 90, 90, 0.055);
+  --box-shadow-medium: 0 3px 4px rgba(94, 90, 90, 0.055),
+    0 3px 4px rgba(94, 90, 90, 0.055);
+  --project-bg-color: var(--lighter-bg-color);
+  --skills-bg-color: var(--lighter-bg-color);
+  --face-image-border: var(--lighter-bg-color);
+  --education-bg-color: var(--lighter-bg-color);
+  --introduction-bg-gradient: linear-gradient(
+    to bottom,
+    #95b3cf,
+    #95a9b49e,
+    #758d8d57,
+    var(--bg-color)
+  );
+  --contact-socials-bg: var(--lighter-bg-color);
+  --contact-input-bg: var(--lighter-bg-color);
+  --contact-send-color: var(--txt-color);
+  --hamburger-button-bg: var(--lighter-bg-color);
+  --hamburger-button-stroke: var(--txt-color);
+  --toggle-theme-bg: var(--lighter-bg-color);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: left;
+  font-family: silka, serif, Helvetica, sans-serif !important;
+  position: relative;
+  font-style: normal;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+main {
+  overflow: hidden;
+}
+
+@import "./components/tripleDotLoader";
+@import "./inits/reusableClasses";
+@import "./providers/toast";
+@import "./components/container";
+@import "./components/themeToggleBtn";
+@import "./components/button";
+@import "./components/sectionHeading";
+@import "./components/header";
+@import "./components/introduction";
+@import "./components/about";
+@import "./components/experience";
+@import "./components/skills";
+@import "./components/projects";
+@import "./components/education";
+@import "./components/contact";
+@import "./components/footer";

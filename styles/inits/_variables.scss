@@ -1,0 +1,27 @@
+// Variable Constants
+$default_font_size: 16px !default;
+$default_transition_time: 0.3s !default;
+
+@mixin sm-breakpoint {
+  @media only screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin md-breakpoint {
+  @media only screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin md-lg-breakpoint {
+  @media only screen and (max-width: 700px) {
+    @content;
+  }
+}
+
+@mixin lg-breakpoint {
+  @media only screen and (max-width: 800px) {
+    @content;
+  }
+}

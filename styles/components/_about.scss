@@ -1,0 +1,26 @@
+.about-container {
+  .about {
+    @extend .d-flex;
+    align-items: center;
+
+    @include md-breakpoint {
+      flex-direction: column;
+    }
+    h2 {
+      white-space: nowrap;
+    }
+    p {
+      line-height: 2;
+      margin-left: 5rem;
+
+      @include md-breakpoint {
+        margin-left: 0;
+        text-align: center;
+      }
+      a {
+        text-decoration: underline;
+        color: var(--txt-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.triple-dot-loader-container {
+  @extend .d-flex;
+  justify-content: space-around;
+  span {
+    display: block;
+    width: 0.65rem;
+    height: 0.65rem;
+    background-color: var(--contact-send-color);
+    border-radius: 50%;
+  }
+}

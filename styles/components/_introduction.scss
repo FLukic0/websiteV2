@@ -1,0 +1,67 @@
+.introduction-container {
+  @extend .d-flex;
+  align-items: center;
+  height: 100vh;
+  min-height: 500px;
+  background: var(--introduction-bg-gradient);
+  .container {
+    height: auto;
+  }
+
+  .introduction {
+    @extend .d-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+
+    .image-container {
+      position: relative;
+      width: fit-content;
+      img {
+        @extend .box-shadow-lg;
+        border: 0.35rem solid var(--face-image-border);
+        border-radius: 50%;
+        height: 8.25rem;
+        width: 8.25rem;
+        object-fit: cover;
+      }
+
+      .wave {
+        @extend .no-user-select;
+        position: absolute;
+        right: 8px;
+        bottom: 8px;
+        font-size: 2rem;
+      }
+    }
+
+    .summary {
+      font-size: 2rem;
+      padding: 0 1rem;
+      margin: 1rem 0;
+      text-align: center;
+      @include sm-breakpoint {
+        font-size: 1.5rem;
+      }
+    }
+
+    .reach-me {
+      @extend .d-flex;
+
+      @include sm-breakpoint {
+        flex-direction: column;
+        row-gap: 1rem;
+      }
+
+      div {
+        @extend .d-flex;
+        @include sm-breakpoint {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

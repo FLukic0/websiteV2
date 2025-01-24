@@ -1,0 +1,25 @@
+.skills-container {
+  .skills-wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    .skill-container {
+      text-align: center;
+
+      h3 {
+        margin: 1rem;
+        font-size: 1.3rem;
+      }
+      .skill-lst {
+        span {
+          @extend .box-shadow-md;
+          display: inline-block;
+          margin: 0.2rem;
+          padding: 0.75rem 1.25rem;
+          border-radius: 0.75rem;
+          background-color: var(--skills-bg-color);
+        }
+      }
+    }
+  }
+}

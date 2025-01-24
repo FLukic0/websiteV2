@@ -1,0 +1,97 @@
+.projects-container {
+  .intro {
+    text-align: center;
+    margin-bottom: 1rem;
+
+    a {
+      color: var(--txt-color);
+      text-decoration: underline;
+    }
+  }
+
+  .more-projects {
+    width: fit-content;
+    margin: 4rem auto 0rem auto;
+    position: relative;
+    padding: 0.5rem 1rem;
+    font-size: 1.05rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    @include sm-breakpoint {
+      font-size: 1rem;
+      letter-spacing: 0;
+    }
+  }
+
+  .project {
+    background-color: var(--project-bg-color);
+    @extend .box-shadow-lg;
+    position: relative;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    .content {
+      margin-right: 21rem;
+
+      @include md-lg-breakpoint {
+        margin-right: 0;
+      }
+      .title {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      .languages {
+        li {
+          display: inline-block;
+          border-radius: 9999px;
+          letter-spacing: 0.05rem;
+          padding: 0.25rem 0.75rem;
+          color: #ffffff;
+          text-transform: uppercase;
+          background-color: rgba(0, 0, 0, 0.7);
+          font-size: 0.7rem;
+          margin: 0.2rem;
+        }
+      }
+
+      .descriptions {
+        padding-left: 2rem;
+        list-style-type: disc;
+        margin-bottom: 1rem;
+        li {
+          margin-top: 0.5rem;
+        }
+      }
+
+      .view-project {
+        width: fit-content;
+      }
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.04) translate(-3px, -5px) rotate(2deg);
+      }
+    }
+
+    img {
+      @extend .box-shadow-md;
+      position: absolute;
+      border-top-left-radius: 0.5rem;
+      transition-property: background-color, border-color, color, fill, stroke,
+        opacity, box-shadow, transform;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 300ms;
+      height: 100%;
+      width: 25rem;
+      top: 1.5rem;
+      right: -5rem;
+
+      @include md-lg-breakpoint {
+        display: none;
+      }
+    }
+  }
+}

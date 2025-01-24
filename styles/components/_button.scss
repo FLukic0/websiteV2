@@ -1,0 +1,33 @@
+.btn {
+  @extend .d-flex;
+  @extend .box-shadow-md;
+  padding: 0.75rem 1.75rem;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  background-color: #ffffff;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  margin: 0 0.5rem;
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+
+  @include sm-breakpoint {
+    font-size: 0.9rem;
+  }
+
+  &.alternate-color {
+    background-color: var(--alternate-button-color) !important;
+    color: var(--alternate-button-txt-color);
+  }
+
+  &.fully-rounded {
+    padding: 1rem !important;
+  }
+
+  &:hover {
+    transform: scale(1.1) translateZ(0);
+  }
+}
