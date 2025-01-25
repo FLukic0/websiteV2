@@ -102,10 +102,10 @@ const Contact: FC = () => {
                 I'm always welcome new opportunities. Feel free to send me an email and I'll get back to you!
               </p>
               <p>
-                You can contact me directly at{" "}
+                You can contact me directly at {" "}
                 <Link href="mailto:filiplukic000@gmail.com">
                   filiplukic000@gmail.com
-                </Link>{" "}
+                </Link>{""}
                 Alternatively, you can use the form!
               </p>
             </FadeUp>
@@ -129,7 +129,7 @@ const Contact: FC = () => {
             </div>
           </div>
           <form onSubmit={handleSubmit} className="form-container">
-            {/* <FadeUp>
+            <FadeUp>
               <div className="top-layer">
                 <div>
                   <label htmlFor="email">Your email</label>
@@ -138,7 +138,7 @@ const Contact: FC = () => {
                     type="email"
                     id="email"
                     required
-                    placeholder="anthony@google.com"
+                    placeholder="example@gmail.com"
                     value={emailInput}
                     onChange={(e) => setEmailInput(e.target.value)}
                   />
@@ -177,7 +177,7 @@ const Contact: FC = () => {
               ) : (
                 <TripleDotLoader />
               )}
-            </FadeUp> */}
+            </FadeUp>
           </form>
         </div>
       </Container>

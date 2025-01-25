@@ -21,12 +21,10 @@ const About: FC = () => {
               <p>
                 {/* I am a{" "}
                 <span className="bold">
-                  software engineer with over 2 years of experience
                 </span>{" "}
-                and a <span className="bold">Carleton University graduate</span>
-                . My passion lies in{" "}
+                and a <span className="bold"></span>
+                {" "}
                 <span className="bold">
-                  collaboration and problem-solving through software development
                 </span>
                 . I have honed my skills across{" "}
                 <span className="bold">

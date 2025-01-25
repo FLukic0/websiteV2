@@ -60,7 +60,7 @@ const Introduction: FC = () => {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <span className="bold">Hello! I'm Filip lukic.</span>{" "}
+            <span className="bold">Hello! I'm Filip Lukic.</span>{" "}
             <span className="bold">I'm a Computer Engineering gradutate from Carleton</span>.{" "}
           </motion.p>
 

@@ -15,7 +15,7 @@ export const projectsData: ProjectInterface[] = [
       "React",
       "Machine Learning",
     ],
-    imgUrl: "",
+    imgUrl: "/bme680DevBoard.png",
     content: [
       `Designed a scalable system architecture for the processing and storage of air quality data using several ESP32
 microcontrollers communicating using MQTT and WebSockets for real time data collection and processing`,
@@ -37,7 +37,7 @@ deployment consistency and allow for faster iteration timelines`,
     language: [
       "C++",
     ],
-    imgUrl: "",
+    imgUrl: "/snowplow.png",
     content: [
       `Designed and implemented an autonomous snow plow using C++ to control and monitor various sensors, including
 ultrasonic rangefinders, IR distance sensors, and line follower sensors for obstacle detection and avoidanc`,
