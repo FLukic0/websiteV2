@@ -54,7 +54,7 @@ and simplier algorithm creation throught the use of default constructors`,
       "Java",
       "JUnit",
     ],
-    imgUrl: "",
+    imgUrl: "/elevator.png",
     content: [
       `Implmenented an elevator control system in real-time using Java multithreading to minimize wait times and maximize task distrubution among elevators`,
       `Utilized UDP to connect components through a local area network via the same machine with the option to connect across multiple machines machines.`,
