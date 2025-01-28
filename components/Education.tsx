@@ -37,6 +37,7 @@ const Education: FC = () => {
             <div className="info">
               <ul>
                 <li>GPA: 11.27/12 (3.91/4.0), with 20 months of Co-op</li>
+                <li>Graduated with High Distinction</li>
                 <li>Dean's Honour List for all terms</li>
               </ul>
             </div>

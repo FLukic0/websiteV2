@@ -1,1 +1,1 @@
-This is my Personal Website with more changes to come!
+Personal website project to show my achievements and projects throughout my academic and professional career.
