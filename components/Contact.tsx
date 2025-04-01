@@ -105,7 +105,7 @@ const Contact: FC = () => {
                 You can contact me directly at {" "}
                 <Link href="mailto:filiplukic000@gmail.com">
                   filiplukic000@gmail.com
-                </Link>{""}
+                </Link>{". "}
                 Alternatively, you can use the form!
               </p>
             </FadeUp>
